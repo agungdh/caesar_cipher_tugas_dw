@@ -21,7 +21,7 @@ if (count($_POST) > 0) {
 	$dehasil = $_POST['dehasil'];
 
 	$enhasil = Pustaka::caesarencrypt($enkata, $engeser);
-	$dehasil = Pustaka::caesarencrypt($dekata, $degeser);
+	$dehasil = Pustaka::caesardecrypt($dekata, $degeser);
 }
 ?>
 
